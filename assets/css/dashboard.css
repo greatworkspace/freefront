@@ -2,6 +2,9 @@
 body {
     font-family: "Lato", sans-serif;
   }
+  a:link {
+    
+  }
   
   .sidebar {
     height: 100%;
@@ -125,8 +128,20 @@ body {
   border-radius: 20px;
   padding: 20px;
 }
+.rec-books .row .card {
+  background: linear-gradient(35deg, wheat, brown);
+  text-decoration: none;
+}
 
 /* right cards */
+/* date */
+.card.date {
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  text
+}
 .right-col-cards .jumbotron {
   background-image: url(../img/dbass.jpg);
   background-repeat: no-repeat;
@@ -138,7 +153,12 @@ body {
   color: white;
   background: rgba(0, 0, 0, 0.446);
   padding: 0px;
+  border-radius: 20px;
+  padding-left: 10px;
 }
 .right-col-cards .jumbotron p {
-
+  background: rgba(255, 68, 0, 0.549);
+  text-align: center;
+  border-radius: 40px;
+  padding: 0px;
 }
