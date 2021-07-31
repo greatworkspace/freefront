@@ -1,0 +1,19 @@
+.navbar {
+    top: -2px;
+	left: 244px;
+	width: 908px;
+	height: 95px;
+	background:rgba(255,255,255,0);
+}
+.nav {
+    top: 21px;
+	left: 25px;
+	width: 450px;
+	height: 50px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	background:rgba(243.31,243.31,243.31,1);
+}

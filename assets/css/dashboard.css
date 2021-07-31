@@ -3,7 +3,7 @@ body {
     font-family: "Lato", sans-serif;
   }
   a:link {
-    
+    color:wheat;
   }
   
   .sidebar {
@@ -140,10 +140,12 @@ body {
   padding: 10px;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  text
+  height: 40px;
+   
 }
 .right-col-cards .jumbotron {
-  background-image: url(../img/dbass.jpg);
+  background: #DDEDFF;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -151,14 +153,8 @@ body {
 }
 .right-col-cards .jumbotron p,h3 {
   color: white;
-  background: rgba(0, 0, 0, 0.446);
+  /* background: rgba(0, 0, 0, 0.446); */
   padding: 0px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   padding-left: 10px;
-}
-.right-col-cards .jumbotron p {
-  background: rgba(255, 68, 0, 0.549);
-  text-align: center;
-  border-radius: 40px;
-  padding: 0px;
 }
