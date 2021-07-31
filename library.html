@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="assets/css/bootstrap-4.4.1.css">
+    <link rel="stylesheet" href="assets/css/library.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
@@ -16,11 +19,11 @@
         <div class="container">
             <!-- navigation -->
             <!-- jombotron -->
-            <div class="jumbotron">
+            <div class="jumbotron readers">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h2>Readers are Leaders!</h2>
-                        <p>Get books and other suport materials here in our digiteal library</p>
+                        <h2 class="readers">Readers are Leaders!</h2>
+                        <p class="get-books">Get books and other suport materials here in our digiteal library</p>
                         <div class="row">
                             <!-- search -->
                             <div class="col-sm-6">
@@ -31,35 +34,54 @@
                             
                             <!-- filter -->
                             <div class="col-sm-6">
-                                <div class="dropdown">
-                                    <button class="btn-warning dropdown-toggle" type="button" id="button-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Subjects
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="btnDropdown">
-                                        <a href="#" class="dropdown-item">SSS1</a>
-                                        <a href="#" class="dropdown-item">SSS1</a>
-                                        <a href="#" class="dropdown-item">SSS1</a>
-                                        <a href="#" class="dropdown-item">SSS1</a>
-                                        <a href="#" class="dropdown-item">SSS1</a>
+                                <div class="row">                                    
+                                    <div class="col-sm-6 subjects">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" id="button-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Subjects
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="btnDropdown">
+                                                <a href="#" class="dropdown-item">English</a>
+                                                <a href="#" class="dropdown-item">Maths</a>
+                                                <a href="#" class="dropdown-item">SSS1</a>
+                                                <a href="#" class="dropdown-item">SSS1</a>
+                                                <a href="#" class="dropdown-item">SSS1</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 classFILTER">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" id="button-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Class
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="btnDropdown">
+                                                <a href="#" class="dropdown-item">SSS1</a>
+                                                <a href="#" class="dropdown-item">SSS1</a>
+                                                <a href="#" class="dropdown-item">SSS1</a>
+                                                <a href="#" class="dropdown-item">SSS1</a>
+                                                <a href="#" class="dropdown-item">SSS1</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                
                             </div>
 
 
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <img src="" alt="readers">
+                    <div class="col-sm-6 reader">
+                        <img src="assets/img/reader.png" alt="readers">
                     </div>
                 </div>
-            </div><br><br>
+            </div>
             <div class="section">
                 <div class="container-fluid">
                     <div class="container">
                         <div class="head-text">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <h6>Subjects </h6>                                    
+                                    <!-- <h6>Subjects </h6>                                     -->
                                 </div>
                                 <div class="col-sm-4 text-center">
                                     <nav aria-label="Page navigation example">
@@ -73,7 +95,7 @@
                                       </nav>
                                 </div>
                                 <div class="col-sm-4 text-right">
-                                    <p><a href="#">See all</a></p>                                    
+                                    <!-- <p><a href="#">See all</a></p>                                     -->
                                 </div>
                             </div>
                         </div>
