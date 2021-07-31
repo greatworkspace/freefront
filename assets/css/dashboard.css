@@ -116,6 +116,13 @@ body {
   );
   height: 250px;
   text-align: center;
-  
+}
+
+/* recommended books */
+.rec-books .card {
+  border-top: #ffffff;
+  border-right: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
 }
 
