@@ -143,3 +143,9 @@ bar chart
   text-align: center;
   padding: 8px;
 }
+
+/* dboard2 */
+.classroom img {
+  width: 150px;
+  height: 150px;
+}
