@@ -184,3 +184,10 @@ canvas.card-img-top {
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 border-radius: 10px;
 }
+
+/* teacher's dashboard */
+.row.re-class {
+  overflow: auto;
+  white-space: nowrap;
+  border-spacing: 20px;
+}
