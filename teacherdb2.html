@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>dashboard</title>
+    
+    <!-- bootstrap/css -->
+    <link href="assets/css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="assets/css/dashboard.css" rel="stylesheet">
+    
+    <!-- bootstrapjq -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div id="mySidebar" class="sidebar">               
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#"><img src="assets/img/logo.svg" alt="Sacred Heart Catholic College"></a>
+                <a href="#"><span class="fas fa-user"></span> Bukeze</a>                
+                <a href="#"><img src="assets/img/dboard-icon.svg" alt="" class="icon"> Dashboard</a>
+                <a href="#"><img src="assets/img/classes-icon.svg" alt="" class="icon"> Classes</a>
+                <a href="#"><img src="assets/img/ass-icon.svg" alt="" class="icon"> Assignments</a>
+                <a href="#"><img src="assets/img/logout-icon.svg" alt="" class="icon"> Log out</a>
+              </div>
+              
+              <div id="main">
+                  <div class="row">
+                      <div class="row col-lg-9">
+                          
+                                                                         
+                      </div>
+                      <div class="col-lg-3"></div>
+                    <!-- search box to be centered -->
+                    
+                  </div>
+                  <div class="main">
+                      <div class="row">                          
+                          <!-- main -->
+                          <div class="col-lg-9 main-cards" id="main-cards">
+                              <div class="row">
+                                  <div class="col-sm-3">
+                                    <button class="openbtn" onclick="openNav()">☰</button>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    
+                                        <input type="text" name="search" placeholder="Search..">
+                                    
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="card hello">
+                                  <br>
+                                <h6>Hello Bukeze</h6>
+                                <h1>You Have Improved!</h1>
+                              </div><br>
+                              <div class="card bar-chart">
+                                  <canvas>
+                                    bar chart
+                                  </canvas>
+                              </div><br>
+                             <div class="row"><br>
+                                  <!-- classes today -->
+                              <div class="col-lg-3">
+                                  <div class="jumbotron ass-num" id="ass-num">
+                                      <p>You Have</p>
+                                      <h1>5</h1>
+                                      <h6>Assignments Today</h6>
+                                  </div>
+                              </div>
+                              <!-- Recommended books -->
+                              <div class="col-lg-9 rec-books">
+                                  <div class="card">
+                                      <h5>Recommended Books <span ><a href="#" class="">See all</a></span></h5>
+                                      <div class="row">
+                                          <div class="col-sm-6">
+                                              <a href="#">
+                                                  <div class="card">
+                                                      <img src="assets/img/mod-biology.png" alt="book-img" class="card-img-top">
+                                                      <div class="card-body">
+                                                          <h6 class="title">Modern-Biology</h6>
+                                                          <p class="subject">Biology</p>
+                                                      </div>
+                                                  </div>
+                                              </a>
+                                          </div>
+                                          <div class="col-sm-6">
+                                              <a href="#">
+                                                  <div class="card">
+                                                      <img src="assets/img/chem.png" alt="book-img" class="card-img-top">
+                                                      <div class="card-body">
+                                                          <h6 class="title">Organic Chemistry</h6>
+                                                          <p class="subject">Chemistry</p>
+                                                      </div>
+                                                  </div>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                             </div>
+                          </div>
+
+                          <!-- right-column -->
+                          <div class="col-lg-3 right-col-cards" id="right-col-cards">
+                              <div class="container">
+                                  <div class="card date">
+                                    <p id="date"></p>
+                                  </div>
+                                  <h6>Assignments <span><a href="#">See all</a></span></h6>
+                                  <div class="row">
+                                      <div class="jumbotron col-sm-6 col-lg-12">
+                                      <p>Be Quick</p>
+                                      <h3>Physics</h3>
+                                      <p>Submit in: <br>ten minutes </p>
+                                  </div>
+
+                                  <div class="jumbotron col-sm-6 col-lg-12">
+                                    <p>Be Quick</p>
+                                    <h3>Physics</h3>
+                                    <p>Submit in: <br> ten minutes </p>
+                                </div>
+
+                                <div class="jumbotron col-sm-6 col-lg-12">
+                                    <p>Be Quick</p>
+                                    <h3>Physics</h3>
+                                    <p>Submit in: <br> ten minutes </p>
+                                </div>
+
+                                <div class="jumbotron col-sm-6 col-lg-12">
+                                    <p>Be Quick</p>
+                                    <h3>Physics</h3>
+                                    <p>Submit in: <br> ten minutes </p>
+                                </div>
+
+                                <div class="jumbotron col-sm-6 col-lg-12">
+                                      <p>Be Quick</p>
+                                      <h3>Physics</h3>
+                                      <p>Submit in: <br> ten minutes </p>
+                                  </div>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+               
+              </div>
+              
+              <script> 
+              function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+              }
+              </script>
+
+              <!-- date -->
+              <script>
+                  n =  new Date();
+                  y = n.getFullYear();
+                  m = n.getMonth() + 1;
+                  d = n.getDate();
+                  document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+              </script>
+        </div>
+    </div>
+</body>
+</html>
