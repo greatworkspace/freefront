@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academic/Moral Report</title>
+    
+    <!-- bootstrap/css -->
+    <link href="assets/css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="assets/css/dashboard.css" rel="stylesheet">
+    
+    <!-- bootstrapjq -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <!-- sidebar -->
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#"><img src="assets/img/logo.svg" alt="Sacred Heart Catholic College"></a>
+                <a href="#"><span class="fas fa-user"></span> Bukeze</a>                
+                <a href="#"><img src="assets/img/dboard-icon.svg" alt="" class="icon"> Dashboard</a>
+                <a href="#"><img src="assets/img/classes-icon.svg" alt="" class="icon"> Classes</a>
+                <a href="#"><img src="assets/img/ass-icon.svg" alt="" class="icon"> Assignments</a>
+                <a href="#"><img src="assets/img/logout-icon.svg" alt="" class="icon"> Log out</a>
+            </div>
+            <!-- sidebar ends -->
+<!-- main page -->
+            <nav class="navbar navbar-light">
+
+                <button class="openbtn" onclick="openNav()">☰</button>
+
+                <form action="" class="search">
+                    <input type="text" name="search" placeholder="Search..">
+                    <button class="btn btn-search btn-outline-info"><a href="#">Search</a></button>
+                </form>
+
+                <div id="date"></div>
+            </nav>
+<!-- main main -->
+            <div class="container-fluid">
+                <div class="container">
+                    
+                    <!-- greeting -->
+                    <div class="greetings">
+                        <div class="card">
+                            <h3>Welcome, Mrs Adeyemi</h3>
+                            <p>Your have <b>5</b> unattended Notifiications</p>
+                        </div>
+                    </div>
+                    <!-- greeting ends -->
+                    <br>
+
+                    <!-- wardsdetails -->
+                    <h4 class="ward-details">Ward Details</h4>
+                    <div class="container ward-details">
+                        <dl class="row">
+
+                            <dt class="col-sm-3">Name</dt>
+                            <dd class="col-sm-9">Adeyemi Moses</dd>
+
+                            <dt class="col-sm-3">Class</dt>
+                            <dd class="col-sm-9">SSS 3 Sciences</dd>
+
+                            <dt class="col-sm-3">Age</dt>
+                            <dd class="col-sm-9">17</dd>
+
+                            <dt class="col-sm-3">Profile Photo</dt>
+                            <dd class="col-sm-9">
+                                <div class="card" style="width: 150px; height: 150px;">
+                                    <img src="" alt="profile picture" class="student-pro-pic" width="150px" height="150px">
+                                </div>
+                            </dd>
+
+                            <dt class="col-sm-3">Test Report</dt>
+                            <dd class="col-sm-9">
+                                <div class="card">bar chartgoes in the canvas</div>
+                            </dd>
+                             
+                        </dl>
+                    </div>
+
+                    
+                    
+                    <!-- wardsdetails ends -->
+<!-- main main ends -->
+                </div>
+            </div>
+<!-- main ends -->
+        </div>
+    </div>
+    <script> 
+              function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+              }
+    </script>
+
+              <!-- date -->
+    <script>
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = m + "-" + d + "-" + y;
+    </script>
+</body>
+</html>
