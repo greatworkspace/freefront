@@ -40,7 +40,7 @@
         <div class="container-fluid">
             <div class="container">
                 
-                <form action="" method="post" style="background: white; padding: 40px;">
+                <form action="" method="post" style="background: rgba(0, 0, 0, 0.61); padding: 40px;">
                     <h4>Parent/Guardian SignUp Form</h4><br>
                     <!-- title -->
                     <p>Personal info</p>
@@ -143,9 +143,22 @@
                    <div class="row">
                        <div class="col-sm-12 col-lg-6">
                            <div class="card student">
-                               <dl>
+                               <dl class="row">
+
                                    <dt class="col-sm-3">Name</dt>
-                                   <dd class="col-sm-9"></dd>
+                                   <dd class="col-sm-9"><input type="text" name="" id="" class="form-control" placeholder="Students name" aria-describedby=""></dd>
+                                   
+                                   <dt class="col-sm-3">Class</dt>
+                                   <dd class="col-sm-9">
+                                       <select name="classroom" id="">
+                                           <option value="0">Class</option>
+                                           <option value="1">JSS 1</option>
+                                           <option value="2">SSS 1 Sciences</option>
+                                       </select>
+                                   </dd>
+
+                                   <dt class="col-sm-3"></dt>
+
                                </dl>
                            </div>
                        </div>
