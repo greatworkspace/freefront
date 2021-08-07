@@ -94,22 +94,63 @@
                     <div class="form-row">
                         <!-- gender -->
                         <div class="form-group col-sm-3">
+                            <small id="helpId" class="text-muted">gender</small>
                             <select name="gender" id="" aria-describedby="helpId">
-                                <option value="0">Gender</option>
+                                <option value="0">------</option>
                                 <option value="1"><i class="fa fa-female" aria-hidden="true"></i> Female</option>
                                 <option value="2"><i class="fa fa-male" aria-hidden="true"></i> Male</option>
                             </select>
-                            <small id="helpId" class="text-muted">gender</small>
                         </div>
 
                         <!-- Marital Status -->
                         <div class="form-group col-sm-3">
-                            
+                            <!-- marital status -->
+                            <small id="helpId" class="text-muted">Marital status</small>
+                            <select name="maritalStatus" id="" aria-describedby="helpId">
+                                <option value="0">------</option>
+                                <option value="1">Married</option>
+                                <option value="2">Single</option>
+                                <option value="3">Divorced</option>
+                                <option value="4">Separated</option>
+                                <option value="5">Single Mother</option>
+                                <option value="6">Single Father</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                    <!-- children in school -->
+                    <p>Ward(s) Details</p>
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-3">
+                            <!-- number of children -->
+                            <small id="helpId" class="text-muted">Number of Wards in our School</small>
+                            <select name="maritalStatus" id="" aria-describedby="helpId">
+                                <option value="0">------</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
                         </div>
 
-                        <div class="form-group col-sm-3"></div>
-
                     </div>
+
+                    <!-- repeat this for each children -->
+                   <div class="row">
+                       <div class="col-sm-12 col-lg-6">
+                           <div class="card student">
+                               <dl>
+                                   <dt class="col-sm-3">Name</dt>
+                                   <dd class="col-sm-9"></dd>
+                               </dl>
+                           </div>
+                       </div>
+                   </div>
+                    <!-- repeat this for each children ends -->
 
 
                 </form>
