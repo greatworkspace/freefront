@@ -8,6 +8,28 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- main styles -->
+    <link rel="stylesheet" type="text/css" href="https://test.shccabkebooks.com/static/assets/login/vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="https://test.shccabkebooks.com/static/assets/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="https://test.shccabkebooks.com/static/assets/login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="https://test.shccabkebooks.com/static/assets/login/vendor/animate/animate.css">
+	<!--===============================================================================================-->	
+		<link rel="stylesheet" type="text/css" href="https://test.shccabkebooks.com/static/assets/login/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="https://test.shccabkebooks.com/static/assets/login/vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="https://test.shccabkebooks.com/static/assets/login/vendor/select2/select2.min.css">
+	<!--===============================================================================================-->	
+		<link rel="stylesheet" type="text/css" href="https://test.shccabkebooks.com/static/assets/login/vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+		<link rel="stylesheet" type="text/css" href="https://test.shccabkebooks.com/static/assets/login/css/util.css">
+		<link rel="stylesheet" type="text/css" href="https://test.shccabkebooks.com/static/assets/login/css/main_new.css">
+	<!--===============================================================================================-->
+    <!-- main styles end -->
   </head>
   <body>
       
@@ -15,14 +37,126 @@
       <!-- navbar ends -->
 
       <!-- main content -->
-      
+    <div class="section">
+        <div class="limiter">
+			<div class="container-login100" style="background-image: url('assets/img/parents.jpg')";>
+				<div class="wrap-login100 p-t-30 p-b-50">
+					
+					<form class="login100-form validate-form p-b-33 p-t-5" method="post" style="background: #fff8d379;">
+
+                        <span class="login100-form-title p-b-41">
+                            <div class="d-flex justify-content-center">
+                                <div class="brand_logo_container">
+                                    <img src="https://test.shccabkebooks.com/static/assets/login/images/logo.svg" class="brand_logo" alt="">
+                                </div>
+                            </div>
+                        </span>
+
+						<input type="hidden" name="csrfmiddlewaretoken" value="7cDbYNnYRvLYSw4BHlrVN5sFlxg4nxnnhe9cqSi7RRrCWKn6etTrXHWBSuB5phug">
+
+
+                        <dl class="row" style="width: 100%; padding-left: 30px;">
+                            <dt>Personal Details</dt>
+                            <!-- name -->
+                            <dd>
+                                <div class="wrap-input100" data-validate="Enter surename">
+							        <input class="input100" type="text" name="surename" id="surename" placeholder="Surename" required>
+							        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+						        </div>
+
+                                <div class="wrap-input100" data-validate="Enter other names">
+							        <input class="input100" type="text" name="Other-names" id="e" placeholder="Other names" required>
+							        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+						        </div>
+                            </dd><br>
+                            <!-- contact details -->
+                            <dt>Contact Details</dt>
+                            <dd>
+                                <div class="wrap-input100" data-validate="Enter phone number">
+							        <input class="input100" type="tel" name="tel" id="tel" placeholder="Phone/Whatsapp" required>
+							        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+						        </div>
+                            </dd>
+
+                            <dd>
+                                <div class="wrap-input100" data-validate="Enter Email Address">
+							        <input class="input100" type="email" name="email" id="email" placeholder="email eg. you@example.com" required>
+							        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+						        </div>
+                            </dd><br>
+                            <!-- family and ward -->
+                            <dt>Ward Details</dt>
+                            <dd>
+                                <div class="wrap-input100" data-validate="Enter Email Address">
+							        <input class="input100" type="email" name="email" id="email" placeholder="email eg. you@example.com" required>
+							        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+						        </div>
+                        
+                                        <select name="wards-num" id="no-of-wards" class="select no-of-wards">
+                                            <option value="0">Number of wards</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                        </select>
+                                                                        
+                                        <input class="input100" type="text" nme="ward-name" id="" placeholder="name" required>
+                                        <select name="students-class" id="students-class">
+                                            <option value="1">Class</option>
+                                            <option value="2">JSS 1</option>
+                                            <option value="3">JSS 2</option>
+                                            <option value="4">JSS 3</option>
+                                        </select>
+                                    
+                                
+                            </dd>
+
+                        </dl>
+						
+
+						<div class="container-login100-form-btn m-t-32">
+							<button class="login100-form-btn">
+								Login
+							</button>
+							<div class="text-right">
+								<a class="btn class=btn btn-link pull-right " href="/register/createParent/" role="button">I'm a parent</a>
+							</div>   
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+    </div>
       <!-- main content ends -->
+
       <!-- footer goes after this comment -->
 
 
 
 
     <!-- Optional JavaScript -->
+    <div id="dropDownSelect1"></div>
+		
+	<!--===============================================================================================-->
+		<script src="https://test.shccabkebooks.com/static/assets/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+		<script src="https://test.shccabkebooks.com/static/assets/login/vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+		<script src="https://test.shccabkebooks.com/static/assets/login/vendor/bootstrap/js/popper.js"></script>
+		<script src="https://test.shccabkebooks.com/static/assets/login/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+		<script src="https://test.shccabkebooks.com/static/assets/login/vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+		<script src="https://test.shccabkebooks.com/static/assets/login/vendor/daterangepicker/moment.min.js"></script>
+		<script src="https://test.shccabkebooks.com/static/assets/login/vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+		<script src="https://test.shccabkebooks.com/static/assets/login/vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+		<script src="https://test.shccabkebooks.com/static/assets/login/js/main.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
