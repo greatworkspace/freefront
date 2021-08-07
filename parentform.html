@@ -32,104 +32,76 @@
     <!-- main styles end -->
   </head>
   <body>
-      
       <!-- navbar if neccessary -->
       <!-- navbar ends -->
 
       <!-- main content -->
-    <div class="section">
-        <div class="limiter">
-			<div class="container-login100" style="background-image: url('assets/img/parents.jpg')";>
-				<div class="wrap-login100 p-t-30 p-b-50">
-					
-					<form class="login100-form validate-form p-b-33 p-t-5" method="post" style="background: #fff8d379;">
+      <section class="section-signup" style="background-image: url(assets/img/parents.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <div class="container-fluid">
+            <div class="container">
+                
+                <form action="" method="post" style="background: white; padding: 40px;">
+                    <h4>Parent/Guardian SignUp Form</h4><br>
+                    <!-- title -->
+                    <p>Personal info</p>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="Title"></label>
+                          <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                          <small id="helpId" class="text-muted">Help text</small>
+                        </div>
+                    </div>
 
-                        <span class="login100-form-title p-b-41">
-                            <div class="d-flex justify-content-center">
-                                <div class="brand_logo_container">
-                                    <img src="https://test.shccabkebooks.com/static/assets/login/images/logo.svg" class="brand_logo" alt="">
-                                </div>
-                            </div>
-                        </span>
+                    <!-- name -->
+                    
+                    <div class="form-row">
 
-						<input type="hidden" name="csrfmiddlewaretoken" value="7cDbYNnYRvLYSw4BHlrVN5sFlxg4nxnnhe9cqSi7RRrCWKn6etTrXHWBSuB5phug">
-
-
-                        <dl class="row" style="width: 100%; padding-left: 30px;">
-                            <dt>Personal Details</dt>
-                            <!-- name -->
-                            <dd>
-                                <div class="wrap-input100" data-validate="Enter surename">
-							        <input class="input100" type="text" name="surename" id="surename" placeholder="Surename" required>
-							        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
-						        </div>
-
-                                <div class="wrap-input100" data-validate="Enter other names">
-							        <input class="input100" type="text" name="Other-names" id="e" placeholder="Other names" required>
-							        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
-						        </div>
-                            </dd><br>
-                            <!-- contact details -->
-                            <dt>Contact Details</dt>
-                            <dd>
-                                <div class="wrap-input100" data-validate="Enter phone number">
-							        <input class="input100" type="tel" name="tel" id="tel" placeholder="Phone/Whatsapp" required>
-							        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
-						        </div>
-                            </dd>
-
-                            <dd>
-                                <div class="wrap-input100" data-validate="Enter Email Address">
-							        <input class="input100" type="email" name="email" id="email" placeholder="email eg. you@example.com" required>
-							        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
-						        </div>
-                            </dd><br>
-                            <!-- family and ward -->
-                            <dt>Ward Details</dt>
-                            <dd>
-                                <div class="wrap-input100" data-validate="Enter Email Address">
-							        <input class="input100" type="email" name="email" id="email" placeholder="email eg. you@example.com" required>
-							        <span class="focus-input100" data-placeholder="&#xe82a;"></span>
-						        </div>
+                        <div class="form-group col-sm-6">
+                          <label for="surename"></label>
+                          <input type="text" name="" id="" class="form-control" placeholder="Surename" aria-describedby="helpId" required>
+                          <small id="helpId" class="text-muted">enter surename</small>
+                        </div>
                         
-                                        <select name="wards-num" id="no-of-wards" class="select no-of-wards">
-                                            <option value="0">Number of wards</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                        </select>
-                                                                        
-                                        <input class="input100" type="text" nme="ward-name" id="" placeholder="name" required>
-                                        <select name="students-class" id="students-class">
-                                            <option value="1">Class</option>
-                                            <option value="2">JSS 1</option>
-                                            <option value="3">JSS 2</option>
-                                            <option value="4">JSS 3</option>
-                                        </select>
-                                    
-                                
-                            </dd>
+                        <div class="form-group col-sm-6">
+                          <label for="other-names"></label>
+                          <input type="text" name="" id="" class="form-control" placeholder="Other names" aria-describedby="helpId" required>
+                          <small id="helpId" class="text-muted">enter other name(s)</small>
+                        </div>
 
-                        </dl>
-						
+                    </div><br>
 
-						<div class="container-login100-form-btn m-t-32">
-							<button class="login100-form-btn">
-								Login
-							</button>
-							<div class="text-right">
-								<a class="btn class=btn btn-link pull-right " href="/register/createParent/" role="button">I'm a parent</a>
-							</div>   
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-    </div>
+                    <!-- contact details -->
+                    <p>Contact info</p>
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-4">
+                          <label for="Email"></label>
+                          <input type="email" name="" id="" class="form-control" placeholder="you@example.com" aria-describedby="helpId" required>
+                          <small id="helpId" class="text-muted">enter your email address</small>
+                        </div>
+
+                        <div class="form-group col-sm-4">
+                            <label for="phone"></label>
+                            <input type="tel" name="" id="" class="form-control" placeholder="08123456789" aria-describedby="helpId" required>
+                            <small id="helpId" class="text-muted">enter your phone number</small>
+                        </div>
+
+                        <div class="form-group col-sm-4">
+                            <label for="address"></label>
+                            <input type="text" name="" id="" class="form-control" placeholder="123, Main Street, City, State, Nigeria" aria-describedby="helpId" required>
+                            <small id="helpId" class="text-muted">your residential address</small>
+                        </div>
+
+                    </div><br>
+
+                    <div class="form-row"></div>
+
+
+                </form>
+
+            </div>
+        </div>
+      </section>
       <!-- main content ends -->
 
       <!-- footer goes after this comment -->
