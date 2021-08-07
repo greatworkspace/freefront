@@ -45,16 +45,12 @@
                     <!-- title -->
                     <p>Personal info</p>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="Title"></label>
-                          <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                          <small id="helpId" class="text-muted">Help text</small>
-                        </div>
-                    </div>
 
-                    <!-- name -->
-                    
-                    <div class="form-row">
+                        <div class="form-group col-sm-2">
+                            <label for="nameTitle"></label>
+                            <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                            <small id="helpId" class="text-muted">title</small>
+                        </div>
 
                         <div class="form-group col-sm-6">
                           <label for="surename"></label>
@@ -62,7 +58,7 @@
                           <small id="helpId" class="text-muted">enter surename</small>
                         </div>
                         
-                        <div class="form-group col-sm-6">
+                        <div class="form-group col-sm-4">
                           <label for="other-names"></label>
                           <input type="text" name="" id="" class="form-control" placeholder="Other names" aria-describedby="helpId" required>
                           <small id="helpId" class="text-muted">enter other name(s)</small>
@@ -94,7 +90,26 @@
 
                     </div><br>
 
-                    <div class="form-row"></div>
+                    <p>Family info</p>
+                    <div class="form-row">
+                        <!-- gender -->
+                        <div class="form-group col-sm-3">
+                            <select name="gender" id="" aria-describedby="helpId">
+                                <option value="0">Gender</option>
+                                <option value="1"><i class="fa fa-female" aria-hidden="true"></i> Female</option>
+                                <option value="2"><i class="fa fa-male" aria-hidden="true"></i> Male</option>
+                            </select>
+                            <small id="helpId" class="text-muted">gender</small>
+                        </div>
+
+                        <!-- Marital Status -->
+                        <div class="form-group col-sm-3">
+                            
+                        </div>
+
+                        <div class="form-group col-sm-3"></div>
+
+                    </div>
 
 
                 </form>
