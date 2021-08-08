@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>jQuery cloneData.js Plugin Examples</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/minty/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.3.2/select2.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.css">
+    <style>
+        body{background-color:#F9F9FC;font-family: 'Roboto', sans-serif;font-size:14px;}
+        .select2-container {
+            padding: 0;
+            border: none;
+        }
+        h3{margin-bottom:0;}
+        .card{box-shadow: 0 0 13px 0 rgba(82,63,105,.05);background-color: #fafafa;margin-bottom: 20px;border-radius: 4px;padding: 20px;}
+        .select2-choice {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + .75rem + 2px) !important;
+            padding: .375rem .75rem !important;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5 !important;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+    </style>
+</head>
+<body style="background-image: url();">
+<div class="container" style="margin:70px auto">
+    <div class="margin-t-md">
+        <div class="parent-form">
+            <div class="card">
+                <h1>Parent/Guardian's Sign up Form</h1>
+            </div>
+            <form action="#" method="post" role="form" autocomplete="off">
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label" for="parent-surename">Surename</label>
+                            <input type="text" id="parent-surename" class="form-control" name="Parent[surename]"
+                                   maxlength="32" aria-required="true" placeholder="Ajao">
+
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label" for="parent-other_name">Other names</label>
+                            <input type="text" id="parent-other_name" class="form-control" name="Parent[other_name]"
+                                   maxlength="64" aria-required="true" placeholder="Olusola David">
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label" for="parent-email">Email</label>
+                            <input type="email" id="parent-email" class="form-control" name="Parent[email]" maxlength="32" aria-required="true" placeholder="you@example.com">
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label" for="parent-phone">Phone/Whatsapp</label>
+                            <input type="tel" id="parent-email" class="form-control" name="Parent[phone]" maxlength="32" aria-required="true" placeholder="08123456789">
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+
+                        <div class="form-group">
+                            <label class="control-label" for="parent-dob">Your Date of Birth</label>
+                            <div class="input-group">
+                                <input type="text" id="parent-dob" class="form-control datepicker" name="Parent[dob]" placeholder="mm/dd/yyyy">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default"><i class="far fa-calendar-alt"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="control-label" for="parent-address">Address</label>
+                            <input type="tel" id="parent-address" class="form-control" name="Parent[address]" maxlength="32" aria-required="true" placeholder="123, Street Name, L.G.A., City, State, Country">
+                            <p class="help-block help-block-error"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label class="control-label" for="parent-gender">Gender</label>
+                            <select class="form-control select2 select2-init" name="Parent[gender]" id="" aria-required="true">
+                                <option selected></option>
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label class="control-label" for="parent-marital-status">Marital Status</label>
+                            <select class="form-control select2 select2-init" name="Parent[marital-status]" id="" aria-required="true">
+                                <option selected></option>
+                                <option value="">Single</option>
+                                <option value="">Married</option>
+                                <option value="">Divorced</option>
+                                <option value="">Separated</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="row">
+                    <div class="container col-sm-6">
+                        <div class="form-group">
+                          <label class="coltrol-label" for="parent-password">Create Password</label>
+                          <input type="password" class="form-control" name="" id="" placeholder="**************">
+                        </div>
+                    </div>
+
+                    <div class="container col-sm-6">
+                        <div class="form-group">
+                          <label class="coltrol-label" for="parent-password">Confirm Password</label>
+                          <input type="password" class="form-control" name="" id="" placeholder="**************">
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="main-container">
+                    <div class="panel card container-item">
+                        <div class="panel-body">
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="control-label" for="student_name_one_0">Student Name</label>
+                                            <input type="text" id="student_name_one_0" class="form-control" name="StudentName0][student_name1]" maxlength="255" aria-required="true" placeholder="enter your ward's name, WRITE SURENAME IN BLOCKS">
+                                            <p class="help-block help-block-error"></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="class_0">Which Class?</label>
+                                            <select class="form-control select2 select2-init" name="Classroom" id="classroom" aria-required="true">
+                                                <option selected></option>
+                                                <option value="1">JSS1</option>
+                                                <option value="2">JSS2</option>
+                                                <option value="3">JSS3</option>
+                                                <option value="4">SSS1 Sciences</option>
+                                                <option value="5">SSS1 Social-Sciences</option>
+                                                <option value="6">SSS1 Art</option>
+                                                <option value="7">SSS2 Sciences</option>
+                                                <option value="8">SSS2 Social-Sciences</option>
+                                                <option value="9">SSS2 Art</option>
+                                                <option value="10">SSS3 Sciences</option>
+                                                <option value="11">SSS3 Social</option>
+                                                <option value="12">SSS3 Art</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="student-dob">Date of Birth</label>
+                                            <div class="input-group">
+                                                <input type="text" id="student_dob" class="form-control datepicker-init" name="student[dob]" aria-required="true" placeholder="mm/dd/yyyy" >
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-default"><i class="far fa-calendar-alt"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="relationship">How do you relate?</label>
+                                            <select class="form-control select2 select2-init" name="relationship" id="relationship">
+                                                <option value="1">Father</option>
+                                                <option value="2">Mother</option>
+                                                <option value="3">Guardian</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div>
+                                            <a href="javascript:void(0)" class="remove-item btn btn-sm btn-danger remove-social-media">Remove</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <a class="btn btn-success btn-sm" id="add-more" href="javascript:;" role="button"><i class="fa fa-plus"></i> Add Another Ward Details</a>
+                        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/3.3.2/select2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.js"></script>
+<script src="https://cdn.ckeditor.com/4.5.1/standard/ckeditor.js"></script>
+<script src="assets/js/parent-signup.js" type="text/javascript"></script>
+<script>
+    $('a#add-more').cloneData({
+        mainContainerId: 'main-container', // Main container Should be ID
+        cloneContainer: 'container-item', // Which you want to clone
+        removeButtonClass: 'remove-item', // Remove button for remove cloned HTML
+        removeConfirm: true, // default true confirm before delete clone item
+        removeConfirmMessage: 'Are you sure want to delete?', // confirm delete message
+        //append: '<a href="javascript:void(0)" class="remove-item btn btn-sm btn-danger remove-social-media">Remove</a>', // Set extra HTML append to clone HTML
+        minLimit: 1, // Default 1 set minimum clone HTML required
+        maxLimit: 5, // Default unlimited or set maximum limit of clone HTML
+        defaultRender: 1,
+        init: function () {
+            console.info(':: Initialize Plugin ::');
+        },
+        beforeRender: function () {
+            console.info(':: Before rendered callback called');
+        },
+        afterRender: function () {
+            console.info(':: After rendered callback called');
+            //$(".selectpicker").selectpicker('refresh');
+        },
+        afterRemove: function () {
+            console.warn(':: After remove callback called');
+        },
+        beforeRemove: function () {
+            console.warn(':: Before remove callback called');
+        }
+
+    });
+
+    /*$('.select2').select2({
+        placeholder: 'Select a month'
+    });*/
+
+    $(document).ready(function () {
+        $('.datepicker').datepicker();
+    });
+
+    // Replace the <textarea id="editor1"> with a CKEditor
+    // instance, using default configuration.
+    /*CKEDITOR.editorConfig = function (config) {
+        config.language = 'es';
+        config.uiColor = '#F7B42C';
+        config.height = 300;
+        config.toolbarCanCollapse = true;
+
+    };*/
+    //CKEDITOR.replace('editor1');
+
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+</body>
+</html>
