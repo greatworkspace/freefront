@@ -30,6 +30,8 @@
 		<link rel="stylesheet" type="text/css" href="https://test.shccabkebooks.com/static/assets/login/css/main_new.css">
 	<!--===============================================================================================-->
     <!-- main styles end -->
+    <!-- form clonning and increment id -->
+    <script src="assets/js/cloneData.js"></script>
   </head>
   <body>
       <!-- navbar if neccessary -->
@@ -112,8 +114,6 @@
                                 <option value="2">Single</option>
                                 <option value="3">Divorced</option>
                                 <option value="4">Separated</option>
-                                <option value="5">Single Mother</option>
-                                <option value="6">Single Father</option>
                             </select>
                         </div>
                         
@@ -121,11 +121,11 @@
 
                     <!-- children in school -->
                     <p>Ward(s) Details</p>
-                    <div class="form-row">
+                    <div class="container">
 
-                        <div class="form-group col-sm-3">
+                        <!-- <div class="form-group col-sm-3"> -->
                             <!-- number of children -->
-                            <small id="helpId" class="text-muted">Number of Wards in our School</small>
+                            <!-- <small id="helpId" class="text-muted">Number of Wards in our School</small>
                             <select name="maritalStatus" id="" aria-describedby="helpId">
                                 <option value="0">------</option>
                                 <option value="1">1</option>
@@ -135,14 +135,14 @@
                                 <option value="5">5</option>
                                 <option value="6">6</option>
                             </select>
-                        </div>
+                        </div> -->
 
                     </div>
 
                     <!-- repeat this for each children -->
                    <div class="row">
-                       <div class="col-sm-12 col-lg-6">
-                           <div class="card student">
+                       <div class="container col-sm-12 col-lg-6">
+                           <div class="card student" style="padding: 30px; background: rgba(0, 0, 0, 0.39);">
                                <dl class="row">
 
                                    <dt class="col-sm-3">Name</dt>
@@ -157,7 +157,7 @@
                                        </select>
                                    </dd>
 
-                                   <dt class="col-sm-3">Relationship to student</dt>
+                                   <dt class="col-sm-3">Relationship</dt>
                                    <dd class="col-sm-9">
                                     <select name="relationship" id="">
                                         <option value="0">--Select--</option>
@@ -168,10 +168,18 @@
                                    </dd>
 
                                </dl>
-                           </div>
+                           </div>                           
                        </div>
+
+                      
                    </div>
                     <!-- repeat this for each children ends -->
+
+                    <!-- password -->
+                    <div class="passwd">
+
+                    </div>
+                    <!-- passwd ends -->
 
 
                 </form>
