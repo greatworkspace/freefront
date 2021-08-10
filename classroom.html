@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Classroom</title>
+    
+    <!-- bootstrap/css -->
+    <link href="assets/css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="assets/css/dashboard.css" rel="stylesheet">
+    
+    <!-- bootstrapjq -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <!-- for accordion -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <!-- sidebar -->
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#"><img src="assets/img/logo.svg" alt="Sacred Heart Catholic College"></a>                
+                <a href="#"><img src="assets/img/dboard-icon.svg" alt="" class="icon"> Dashboard</a>
+                <a href="#"><img src="assets/img/classes-icon.svg" alt="" class="icon"> Classes</a>
+                <a href="#"><img src="assets/img/ass-icon.svg" alt="" class="icon"> Assignments</a>
+                <a href="#"><img src="assets/img/logout-icon.svg" alt="" class="icon"> Log out</a>
+            </div>
+            <!-- sidebar ends -->
+<!-- main page -->
+            <nav class="navbar navbar-light">
+
+                <button class="openbtn" onclick="openNav()">☰</button>
+
+                <form action="" class="search">
+                    <input type="text" name="search" placeholder="Search..">
+                    <button class="btn btn-search btn-outline-info"><a href="#">Search</a></button>
+                </form>
+
+                <div id="date"></div>
+                <a href="#"><span class="fas fa-user"></span> Bukeze</a>
+            </nav>
+<!-- main main -->
+            <div class="container-fluid">
+                <div class="container"><br><br><br>
+
+                    <div class="card classRule" id="classRule">
+                        <h6>Class Rules</h6>
+                        <ul>
+                            
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, optio.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit modi amet dolorem.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aperiam voluptas cum nostrum!</li>
+
+                        </ul>
+                    </div><br>
+
+                    <!-- select -->
+                    <div class="row">
+                        <!-- select class -->
+                        <div class="form-group col-sm-6">
+                            <label for="selectTeacher">Select Teacher</label>
+                            <select class="custom-select" name="selectTeacher" id="selectClass">
+                                <option selected></option>
+                                <option value="teacher_1">Teacher 1</option>
+                                <option value="teacher_2">Teacher 2</option>
+                                <option value="teacher_3">Teacher 3</option>
+
+                            </select>
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="form-group col-sm-6">
+                            <label for="selectSubject">Select Subject</label>
+                            <select class="custom-select" name="selectSubject" id="selectSubject">
+                                <option selected></option>
+                                <option value="English">English</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Art">Art</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        
+                        <!-- download Assignment -->
+                        <div class="downloadAssignment col-sm-5 card form-group">
+                            <p>View Latest Assignment</p>
+                            <button class="btn btn-primary"><i class="fa fa-download"></i> Download</button>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <!-- intentionnally empty for spacing, delete comment when you're done -->
+                        </div>
+
+                        <!-- upload assignments -->
+                        <div class="form-group col-sm-5 card">
+                          <label for="uploadAssignment">Submit Assignment</label>
+                          <input type="file" class="form-control" name="uploadAssignment" id="uploadAssignment" aria-describedby="helpId" placeholder="" required>
+                          <!-- please set rule for upload size -->
+                          <small id="helpId" class="form-text text-muted">NOTE: file size should not be greater than 500kb</small><br>
+                          <button type="submit" class="btn btn-primary"> <i class="fa fa-upload" aria-hidden="true"></i> Upload</button>
+                        </div>
+
+                    </div>
+                    
+                    
+
+                    
+                    
+
+
+                    
+                    
+                </div>
+            </div>
+<!-- main ends -->
+            
+
+
+        </div>
+    </div>
+    <script> 
+              function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+              }
+    </script>
+
+              <!-- date -->
+    <script>
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = m + "-" + d + "-" + y;
+    </script>
+
+    <!-- dropdown -->
+    <!-- <script>
+        $('.dropdown-toggle').dropdown();
+    </script> -->
+
+    <!-- accordion -->
+    <script>
+        (function () {
+  'use strict'
+
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style')
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        '@-ms-viewport{width:auto!important}'
+      )
+    )
+    document.head.appendChild(msViewportStyle)
+  }
+
+}())
+    </script>
+</body>
+</html>
