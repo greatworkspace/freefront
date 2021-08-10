@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teacher's Dashboard</title>
+    
+    <!-- bootstrap/css -->
+    <link href="assets/css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="assets/css/dashboard.css" rel="stylesheet">
+    
+    <!-- bootstrapjq -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <!-- for accordion -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <!-- sidebar -->
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#"><img src="assets/img/logo.svg" alt="Sacred Heart Catholic College"></a>                
+                <a href="#"><img src="assets/img/dboard-icon.svg" alt="" class="icon"> Dashboard</a>
+                <a href="#"><img src="assets/img/classes-icon.svg" alt="" class="icon"> Classes</a>
+                <a href="#"><img src="assets/img/ass-icon.svg" alt="" class="icon"> Assignments</a>
+                <a href="#"><img src="assets/img/logout-icon.svg" alt="" class="icon"> Log out</a>
+            </div>
+            <!-- sidebar ends -->
+<!-- main page -->
+            <nav class="navbar navbar-light">
+
+                <button class="openbtn" onclick="openNav()">☰</button>
+
+                <form action="" class="search">
+                    <input type="text" name="search" placeholder="Search..">
+                    <button class="btn btn-search btn-outline-info"><a href="#">Search</a></button>
+                </form>
+
+                <div id="date"></div>
+                <a href="#"><span class="fas fa-user"></span> Bukeze</a>
+            </nav>
+<!-- main main -->
+            <div class="container-fluid">
+                <div class="container"><br><br><br>
+
+                    <!-- select -->
+                    <div class="row">
+                        <!-- select class -->
+                        <div class="form-group col-sm-4">
+                            <label for="seleceClass">Select Class</label>
+                            <select class="custom-select" name="selectClass" id="selectClass">
+                                <option selected></option>
+                                <option value="JSS1">JSS1</option>
+                                <option value="SSS2">SSS3</option>
+                                <option value="SSS3">SSS3</option>
+                            </select>
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="form-group col-sm-4">
+                            <label for="selectSubject">Select Subject</label>
+                            <select class="custom-select" name="selectSubject" id="selectSubject">
+                                <option selected></option>
+                                <option value="English">English</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Art">Art</option>
+                            </select>
+                        </div>
+
+                        <!-- select Topic -->
+                        <div class="form-group col-sm-4">
+                            <label for="selectTopic">Select Topic</label>
+                            <select class="custom-select" name="selectTopic" id="selectTopic">
+                                <option selected></option>
+                                <option value="Trigonometry">Trigonometry</option>
+                                <option value="Painting_Techniques">Painting Techniques</option>
+                                <option value="Python_001">Python 001</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- submissions -->
+                    <div class="container-fluid">
+                        <h6>Submissions</h6>
+
+                        <div class="row submitted" id="submitted">
+
+                                <div class="col-sm-12">
+                                    <div class="card  text-center">
+                                        <div class="row">
+
+                                            <div class="col-sm-4 text-left">
+                                                <!-- name -->
+                                                <h6>John Aleshinloye Moses</h6>
+                                            </div>
+                                        
+                                            <div class="col-sm-4 text-left">
+                                                <a name="" id="" class="btn btn-primary" href="#" role="button">open</a>
+                                            </div>
+                                            
+                                            <div class="col-sm-4 text-right">
+                                                <!-- Score -->
+                                                <h6>Score: 10/22</h6>
+                                            </div>
+
+                                        </div>
+                                        
+                                        
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="card  text-center">
+                                        <div class="row">
+
+                                            <div class="col-sm-4 text-left">
+                                                <!-- name -->
+                                                <h6>John Aleshinloye Moses</h6>
+                                            </div>
+                                        
+                                            <div class="col-sm-4 text-left">
+                                                <a name="" id="" class="btn btn-primary" href="#" role="button">open</a>
+                                            </div>
+                                            
+                                            <div class="col-sm-4 text-right">
+                                                <!-- Score -->
+                                                <h6>Score: 10/22</h6>
+                                            </div>
+
+                                        </div>
+                                        
+                                        
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="card  text-center">
+                                        <div class="row">
+
+                                            <div class="col-sm-4 text-left">
+                                                <!-- name -->
+                                                <h6>John Aleshinloye Moses</h6>
+                                            </div>
+                                        
+                                            <div class="col-sm-4 text-left">
+                                                <a name="" id="" class="btn btn-primary" href="#" role="button">open</a>
+                                            </div>
+                                            
+                                            <div class="col-sm-4 text-right">
+                                                <!-- Score -->
+                                                <h6>Score: 10/22</h6>
+                                            </div>
+
+                                        </div>
+                                        
+                                        
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="card  text-center">
+                                        <div class="row">
+
+                                            <div class="col-sm-4 text-left">
+                                                <!-- name -->
+                                                <h6>John Aleshinloye Moses</h6>
+                                            </div>
+                                        
+                                            <div class="col-sm-4 text-left">
+                                                <a name="" id="" class="btn btn-primary" href="#" role="button">open</a>
+                                            </div>
+                                            
+                                            <div class="col-sm-4 text-right">
+                                                <!-- Score -->
+                                                <h6>Score: 10/22</h6>
+                                            </div>
+
+                                        </div>
+                                        
+                                        
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="card  text-center">
+                                        <div class="row">
+
+                                            <div class="col-sm-4 text-left">
+                                                <!-- name -->
+                                                <h6>John Aleshinloye Moses</h6>
+                                            </div>
+                                        
+                                            <div class="col-sm-4 text-left">
+                                                <a name="" id="" class="btn btn-primary" href="#" role="button">open</a>
+                                            </div>
+                                            
+                                            <div class="col-sm-4 text-right">
+                                                <!-- Score -->
+                                                <h6>Score: 10/22</h6>
+                                            </div>
+
+                                        </div>
+                                        
+                                        
+
+                                    </div>
+                                </div>
+                                
+                        </div>
+
+                    </div>
+
+                    <!-- upload assignments -->
+                    <div class="form-group">
+                      <label for="uploadAssignment">Upload Assignment</label>
+                      class
+                      <input type="file" class="form-control" name="uploadAssignment" id="uploadAssignment" aria-describedby="helpId" placeholder="" required>
+                      <!-- please set rule for upload size -->
+                      <small id="helpId" class="form-text text-muted">NOTE: file size should not be greater than 500kb</small>
+                      <button type="submit" class="btn btn-primary">Upload</button>
+
+                    </div>
+
+                    
+                    
+
+
+                    
+                    
+                </div>
+            </div>
+<!-- main ends -->
+        </div>
+    </div>
+    <script> 
+              function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+              }
+    </script>
+
+              <!-- date -->
+    <script>
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = m + "-" + d + "-" + y;
+    </script>
+
+    <!-- dropdown -->
+    <!-- <script>
+        $('.dropdown-toggle').dropdown();
+    </script> -->
+
+    <!-- accordion -->
+    <script>
+        (function () {
+  'use strict'
+
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style')
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        '@-ms-viewport{width:auto!important}'
+      )
+    )
+    document.head.appendChild(msViewportStyle)
+  }
+
+}())
+    </script>
+</body>
+</html>
