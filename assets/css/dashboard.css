@@ -42,6 +42,15 @@ body {
     font-size: 36px;
     margin-left: 50px;
   }
+
+
+  /* navbar */
+  .navbar.navbar-light {
+    border: burlywood;
+    height: 95px;
+    box-shadow: #000000;
+    background-color: darkblue;
+  }
   
   .openbtn {
     font-size: 20px;
